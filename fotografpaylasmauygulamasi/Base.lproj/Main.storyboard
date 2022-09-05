@@ -67,33 +67,63 @@
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="49.553571428571423"/>
         </scene>
-        <!--Item 2-->
+        <!--Upload-->
         <scene sceneID="eL5-Hb-q4N">
             <objects>
-                <viewController id="gux-5H-kLB" sceneMemberID="viewController">
+                <viewController id="gux-5H-kLB" customClass="UploadViewController" customModule="fotografpaylasmauygulamasi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1UO-cZ-a3a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Ids-68-jIu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="0Bx-st-x3D"/>
+                    <tabBarItem key="tabBarItem" title="Upload" image="music.mic" catalog="system" id="0Bx-st-x3D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gCh-nA-Cda" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1795" y="352"/>
         </scene>
-        <!--Item 1-->
+        <!--Settings-->
+        <scene sceneID="qYo-Mj-tWM">
+            <objects>
+                <viewController id="IZ5-vr-7MM" customClass="SettingsViewController" customModule="fotografpaylasmauygulamasi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tje-kN-TPy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlT-gM-Guq">
+                                <rect key="frame" x="147" y="424" width="120" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Çıkış Yap"/>
+                                <connections>
+                                    <action selector="çikisyaptiklandi:" destination="IZ5-vr-7MM" eventType="touchUpInside" id="O2X-mG-fBu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="daX-e4-iho"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="arrow.rectanglepath" catalog="system" id="JEM-Wo-YoL"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toViewController" modalPresentationStyle="fullScreen" id="XWO-2P-8Gb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I0w-Xe-0kS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801.449275362319" y="1014.5089285714286"/>
+        </scene>
+        <!--Feed-->
         <scene sceneID="860-3o-rzJ">
             <objects>
-                <viewController id="CaL-2P-BkG" sceneMemberID="viewController">
+                <viewController id="CaL-2P-BkG" customClass="FeedViewController" customModule="fotografpaylasmauygulamasi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B94-cw-Wul">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="MKk-Zv-oWQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="GqU-fh-Lar"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="goforward" catalog="system" id="GqU-fh-Lar"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C9A-R2-FRx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,6 +142,7 @@
                     <connections>
                         <segue destination="CaL-2P-BkG" kind="relationship" relationship="viewControllers" id="UBP-jt-STR"/>
                         <segue destination="gux-5H-kLB" kind="relationship" relationship="viewControllers" id="cZ7-AL-WAk"/>
+                        <segue destination="IZ5-vr-7MM" kind="relationship" relationship="viewControllers" id="a2l-In-w5H"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UzZ-ez-YDL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -120,6 +151,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.rectanglepath" catalog="system" width="128" height="104"/>
+        <image name="goforward" catalog="system" width="121" height="128"/>
+        <image name="music.mic" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

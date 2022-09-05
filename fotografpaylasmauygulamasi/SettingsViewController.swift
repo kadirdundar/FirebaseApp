@@ -15,7 +15,10 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func çikisyaptiklandi(_ sender: Any) {
+        performSegue(withIdentifier: "toViewController", sender: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
