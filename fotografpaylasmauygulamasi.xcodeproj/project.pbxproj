@@ -13,6 +13,8 @@
 		3F56812E28C2022300B4DB67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F56812C28C2022300B4DB67 /* Main.storyboard */; };
 		3F56813028C2022500B4DB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F56812F28C2022500B4DB67 /* Assets.xcassets */; };
 		3F56813328C2022500B4DB67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F56813128C2022500B4DB67 /* LaunchScreen.storyboard */; };
+		3F56813B28C206F000B4DB67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F56813A28C206F000B4DB67 /* GoogleService-Info.plist */; };
+		4F497D0EF043BE0287E3348C /* Pods_fotografpaylasmauygulamasi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB805B3445E3443D192B5B3 /* Pods_fotografpaylasmauygulamasi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		3F56812F28C2022500B4DB67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F56813228C2022500B4DB67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F56813428C2022500B4DB67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F56813A28C206F000B4DB67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63E7AA2F6F1C6AC2085EBDF8 /* Pods-fotografpaylasmauygulamasi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fotografpaylasmauygulamasi.release.xcconfig"; path = "Target Support Files/Pods-fotografpaylasmauygulamasi/Pods-fotografpaylasmauygulamasi.release.xcconfig"; sourceTree = "<group>"; };
+		A9F0BA93E0F06C274A9EB135 /* Pods-fotografpaylasmauygulamasi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fotografpaylasmauygulamasi.debug.xcconfig"; path = "Target Support Files/Pods-fotografpaylasmauygulamasi/Pods-fotografpaylasmauygulamasi.debug.xcconfig"; sourceTree = "<group>"; };
+		EBB805B3445E3443D192B5B3 /* Pods_fotografpaylasmauygulamasi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fotografpaylasmauygulamasi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F497D0EF043BE0287E3348C /* Pods_fotografpaylasmauygulamasi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				3F56812528C2022300B4DB67 /* fotografpaylasmauygulamasi */,
 				3F56812428C2022300B4DB67 /* Products */,
+				708C95CCE6799FA26E426120 /* Pods */,
+				79F43BB6AE0EED622DCA5A6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,27 @@
 				3F56812F28C2022500B4DB67 /* Assets.xcassets */,
 				3F56813128C2022500B4DB67 /* LaunchScreen.storyboard */,
 				3F56813428C2022500B4DB67 /* Info.plist */,
+				3F56813A28C206F000B4DB67 /* GoogleService-Info.plist */,
 			);
 			path = fotografpaylasmauygulamasi;
+			sourceTree = "<group>";
+		};
+		708C95CCE6799FA26E426120 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9F0BA93E0F06C274A9EB135 /* Pods-fotografpaylasmauygulamasi.debug.xcconfig */,
+				63E7AA2F6F1C6AC2085EBDF8 /* Pods-fotografpaylasmauygulamasi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		79F43BB6AE0EED622DCA5A6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBB805B3445E3443D192B5B3 /* Pods_fotografpaylasmauygulamasi.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F56813728C2022500B4DB67 /* Build configuration list for PBXNativeTarget "fotografpaylasmauygulamasi" */;
 			buildPhases = (
+				B35687C1BBA75C1CD9CE9F83 /* [CP] Check Pods Manifest.lock */,
 				3F56811F28C2022300B4DB67 /* Sources */,
 				3F56812028C2022300B4DB67 /* Frameworks */,
 				3F56812128C2022300B4DB67 /* Resources */,
+				F807036D6CE2110A0686337A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +156,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F56813328C2022500B4DB67 /* LaunchScreen.storyboard in Resources */,
+				3F56813B28C206F000B4DB67 /* GoogleService-Info.plist in Resources */,
 				3F56813028C2022500B4DB67 /* Assets.xcassets in Resources */,
 				3F56812E28C2022300B4DB67 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B35687C1BBA75C1CD9CE9F83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fotografpaylasmauygulamasi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F807036D6CE2110A0686337A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fotografpaylasmauygulamasi/Pods-fotografpaylasmauygulamasi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fotografpaylasmauygulamasi/Pods-fotografpaylasmauygulamasi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fotografpaylasmauygulamasi/Pods-fotografpaylasmauygulamasi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F56811F28C2022300B4DB67 /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		3F56813828C2022500B4DB67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F0BA93E0F06C274A9EB135 /* Pods-fotografpaylasmauygulamasi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,7 +373,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kdr.fotografpaylasmauygulamasi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdr.fotografpaylasmauygulamasi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -309,6 +383,7 @@
 		};
 		3F56813928C2022500B4DB67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E7AA2F6F1C6AC2085EBDF8 /* Pods-fotografpaylasmauygulamasi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,7 +401,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kdr.fotografpaylasmauygulamasi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdr.fotografpaylasmauygulamasi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
