@@ -18,7 +18,24 @@ class ViewController: UIViewController {
     }
 
     @IBAction func girisYapTiklandi(_ sender: Any) {
+        
+        if emailTextField.text != "" && sifreTextField.text != ""{
+            Auth.auth().signIn(withEmail: emailTextField.text!, password: sifreTextField.text!) { authdataresult, error in
+                if error != nil{
+                    self.hatamesajı(titleInput: "HATA", messageInput: error?.localizedDescription ?? "hata aldınız tekrar deneyiniz")
+                }
+                else {
+                    self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+                }
+            }
+            
+            
+        }
+        else {
+            hatamesajı(titleInput: "HATA", messageInput: "lütfen şifre ve mail adresinizi giriniz")
+        }
     }
+    
     
     @IBAction func kayitOlTiklandi(_ sender: Any) {
         
