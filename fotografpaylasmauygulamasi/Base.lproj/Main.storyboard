@@ -74,14 +74,54 @@
                     <view key="view" contentMode="scaleToFill" id="1UO-cZ-a3a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Drawing" translatesAutoresizingMaskIntoConstraints="NO" id="7Be-oq-pRI">
+                                <rect key="frame" x="68" y="99" width="279" height="188"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIN-Se-on2">
+                                <rect key="frame" x="155" y="392" width="105" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="ymr-QI-dIr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Share"/>
+                                <connections>
+                                    <action selector="uploadButtonTiklandi:" destination="gux-5H-kLB" eventType="touchUpInside" id="DY3-th-xJS"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your comment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bJP-Hu-uaU">
+                                <rect key="frame" x="68" y="320" width="279" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Jqs-Or-ppe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ids-68-jIu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7Be-oq-pRI" firstAttribute="trailing" secondItem="bJP-Hu-uaU" secondAttribute="trailing" id="9tU-je-1yx"/>
+                            <constraint firstItem="bJP-Hu-uaU" firstAttribute="centerX" secondItem="YIN-Se-on2" secondAttribute="centerX" id="IDR-rf-WWH"/>
+                            <constraint firstItem="YIN-Se-on2" firstAttribute="top" secondItem="bJP-Hu-uaU" secondAttribute="bottom" constant="38" id="Iy6-ZE-1H5"/>
+                            <constraint firstItem="YIN-Se-on2" firstAttribute="leading" secondItem="Ids-68-jIu" secondAttribute="leading" constant="155" id="UxF-Vw-DXF"/>
+                            <constraint firstItem="7Be-oq-pRI" firstAttribute="leading" secondItem="bJP-Hu-uaU" secondAttribute="leading" id="ZTD-T6-O4v"/>
+                            <constraint firstItem="Ids-68-jIu" firstAttribute="bottom" secondItem="YIN-Se-on2" secondAttribute="bottom" constant="357" id="iHK-iG-zgi"/>
+                            <constraint firstItem="7Be-oq-pRI" firstAttribute="top" secondItem="Ids-68-jIu" secondAttribute="top" constant="55" id="k1X-sV-X25"/>
+                            <constraint firstItem="7Be-oq-pRI" firstAttribute="leading" secondItem="Ids-68-jIu" secondAttribute="leading" constant="68" id="m68-WS-m8W"/>
+                            <constraint firstItem="7Be-oq-pRI" firstAttribute="centerX" secondItem="1UO-cZ-a3a" secondAttribute="centerX" id="mWG-G0-oLZ"/>
+                            <constraint firstItem="bJP-Hu-uaU" firstAttribute="top" secondItem="7Be-oq-pRI" secondAttribute="bottom" constant="33" id="vKf-nn-PhK"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="music.mic" catalog="system" id="0Bx-st-x3D"/>
+                    <connections>
+                        <outlet property="imageView" destination="7Be-oq-pRI" id="ftT-7M-WMc"/>
+                        <outlet property="yorumTextField" destination="bJP-Hu-uaU" id="NUl-7H-IGp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gCh-nA-Cda" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1795" y="352"/>
+            <point key="canvasLocation" x="1794.2028985507247" y="351.5625"/>
         </scene>
         <!--Settings-->
         <scene sceneID="qYo-Mj-tWM">
@@ -151,6 +191,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Drawing" width="408" height="225"/>
         <image name="arrow.rectanglepath" catalog="system" width="128" height="104"/>
         <image name="goforward" catalog="system" width="121" height="128"/>
         <image name="music.mic" catalog="system" width="128" height="121"/>
