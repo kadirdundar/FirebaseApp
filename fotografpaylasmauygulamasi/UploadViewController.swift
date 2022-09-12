@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import FirebaseCore
+import FirebaseStorage
 
 class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
@@ -38,6 +41,32 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
     }
     
     @IBAction func uploadButtonTiklandi(_ sender: Any) {
+        let storage = Storage.storage()
+        let storageReferance = storage.reference()
+        
+        let mediaFolder = storageReferance.child("media")
+        
+        if let data = imageView.image?.jpegData(compressionQuality: 0.5) {
+            
+            let imageReferance = mediaFolder.child("image.jpg")
+            imageReferance.putData(data, metadata: nil) { storagemetadata, error in
+                if error != nil {
+                    print(error?.localizedDescription)
+                    
+                }
+                else {
+                    imageReferance.downloadURL { url, error in
+                        if error == nil {
+                            let imageURL = url?.absoluteString
+                            print(imageURL)
+                        }
+                    }
+                }
+            }
+            
+                        }
+        }
+        
     }
     
-}
+
