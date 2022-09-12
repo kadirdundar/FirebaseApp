@@ -9,6 +9,7 @@ import UIKit
 import FirebaseFirestore
 import FirebaseCore
 import FirebaseStorage
+import FirebaseAuth
 
 class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
@@ -45,20 +46,35 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
         let storageReferance = storage.reference()
         
         let mediaFolder = storageReferance.child("media")
-        
+        let uuid = UUID().uuidString
         if let data = imageView.image?.jpegData(compressionQuality: 0.5) {
             
-            let imageReferance = mediaFolder.child("image.jpg")
+            let imageReferance = mediaFolder.child("\(uuid).jpg")
             imageReferance.putData(data, metadata: nil) { storagemetadata, error in
                 if error != nil {
-                    print(error?.localizedDescription)
+                    self.hatamesaji(title: "hata", message: error?.localizedDescription ?? "hata aldınız")
                     
                 }
                 else {
                     imageReferance.downloadURL { url, error in
                         if error == nil {
                             let imageURL = url?.absoluteString
-                            print(imageURL)
+                           
+                            if let imageURL = imageURL{
+                                
+                                let firestoreDatabase = Firestore.firestore()
+                                let firestorePost = ["gorselurl" : imageURL, "yorum" : self.yorumTextField.text! ,"email" : Auth.auth().currentUser!.email, "time" : FieldValue.serverTimestamp()] as [String : Any]
+                                
+                                firestoreDatabase.collection("post").addDocument(data: firestorePost) {
+                                    (error) in
+                                    if error != nil{
+                                        self.hatamesaji(title: "hata", message: error?.localizedDescription ?? "hata aldınız tekrar deneyiniz")
+                                    }
+                                    else{
+                                        
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -66,6 +82,15 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
             
                         }
         }
+    func hatamesaji(title : String, message : String){
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okButton)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    
         
     }
     
