@@ -71,7 +71,9 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
                                         self.hatamesaji(title: "hata", message: error?.localizedDescription ?? "hata aldınız tekrar deneyiniz")
                                     }
                                     else{
-                                        
+                                        self.imageView.image = UIImage(named: "Drawing")
+                                        self.yorumTextField.text = ""
+                                        self.tabBarController?.selectedIndex = 0
                                     }
                                 }
                             }

@@ -17,6 +17,7 @@
 		3FB1C1B828C6058B000EC33D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1C1B728C6058B000EC33D /* FeedViewController.swift */; };
 		3FB1C1BA28C605D0000EC33D /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1C1B928C605D0000EC33D /* UploadViewController.swift */; };
 		3FB1C1BC28C60606000EC33D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1C1BB28C60606000EC33D /* SettingsViewController.swift */; };
+		3FD9A35828CF83DB00466271 /* feedCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD9A35728CF83DB00466271 /* feedCellTableViewCell.swift */; };
 		4F497D0EF043BE0287E3348C /* Pods_fotografpaylasmauygulamasi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB805B3445E3443D192B5B3 /* Pods_fotografpaylasmauygulamasi.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		3FB1C1B728C6058B000EC33D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		3FB1C1B928C605D0000EC33D /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		3FB1C1BB28C60606000EC33D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3FD9A35728CF83DB00466271 /* feedCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedCellTableViewCell.swift; sourceTree = "<group>"; };
 		63E7AA2F6F1C6AC2085EBDF8 /* Pods-fotografpaylasmauygulamasi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fotografpaylasmauygulamasi.release.xcconfig"; path = "Target Support Files/Pods-fotografpaylasmauygulamasi/Pods-fotografpaylasmauygulamasi.release.xcconfig"; sourceTree = "<group>"; };
 		A9F0BA93E0F06C274A9EB135 /* Pods-fotografpaylasmauygulamasi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fotografpaylasmauygulamasi.debug.xcconfig"; path = "Target Support Files/Pods-fotografpaylasmauygulamasi/Pods-fotografpaylasmauygulamasi.debug.xcconfig"; sourceTree = "<group>"; };
 		EBB805B3445E3443D192B5B3 /* Pods_fotografpaylasmauygulamasi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fotografpaylasmauygulamasi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +79,7 @@
 				3FB1C1B728C6058B000EC33D /* FeedViewController.swift */,
 				3FB1C1B928C605D0000EC33D /* UploadViewController.swift */,
 				3FB1C1BB28C60606000EC33D /* SettingsViewController.swift */,
+				3FD9A35728CF83DB00466271 /* feedCellTableViewCell.swift */,
 				3F56812C28C2022300B4DB67 /* Main.storyboard */,
 				3F56812F28C2022500B4DB67 /* Assets.xcassets */,
 				3F56813128C2022500B4DB67 /* LaunchScreen.storyboard */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD9A35828CF83DB00466271 /* feedCellTableViewCell.swift in Sources */,
 				3F56812B28C2022300B4DB67 /* ViewController.swift in Sources */,
 				3FB1C1BA28C605D0000EC33D /* UploadViewController.swift in Sources */,
 				3F56812728C2022300B4DB67 /* AppDelegate.swift in Sources */,
