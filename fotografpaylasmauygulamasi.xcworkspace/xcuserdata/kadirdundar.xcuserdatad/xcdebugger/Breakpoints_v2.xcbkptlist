@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2E352DBC-1EFA-48A9-9B9A-4A59BDA04554"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2599EED-34FA-4C3E-A271-9142317BA8A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "fotografpaylasmauygulamasi/feedCellTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "feedCellTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "C2599EED-34FA-4C3E-A271-9142317BA8A1 - e74772044f587b84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fotografpaylasmauygulamasi.feedCellTableViewCell.postImage.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "fotografpaylasmauygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kadirdundar/Desktop/fotografpaylasmauygulamasi/fotografpaylasmauygulamasi/feedCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "C2599EED-34FA-4C3E-A271-9142317BA8A1 - 411d1244a0479f18"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fotografpaylasmauygulamasi.feedCellTableViewCell.postImage.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "fotografpaylasmauygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kadirdundar/Desktop/fotografpaylasmauygulamasi/fotografpaylasmauygulamasi/feedCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "C2599EED-34FA-4C3E-A271-9142317BA8A1 - 76ef067e02a992a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fotografpaylasmauygulamasi.feedCellTableViewCell.postImage.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "fotografpaylasmauygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kadirdundar/Desktop/fotografpaylasmauygulamasi/fotografpaylasmauygulamasi/feedCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "C2599EED-34FA-4C3E-A271-9142317BA8A1 - b68b8ab6f826a0e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fotografpaylasmauygulamasi.feedCellTableViewCell.postImage.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "fotografpaylasmauygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kadirdundar/Desktop/fotografpaylasmauygulamasi/fotografpaylasmauygulamasi/feedCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "C2599EED-34FA-4C3E-A271-9142317BA8A1 - 98aae2a5b74917d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fotografpaylasmauygulamasi.feedCellTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; fotografpaylasmauygulamasi.feedCellTableViewCell"
+                  moduleName = "fotografpaylasmauygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kadirdundar/Desktop/fotografpaylasmauygulamasi/fotografpaylasmauygulamasi/feedCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "C2599EED-34FA-4C3E-A271-9142317BA8A1 - 6016f727228dd0c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fotografpaylasmauygulamasi.feedCellTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;fotografpaylasmauygulamasi.feedCellTableViewCell&gt;"
+                  moduleName = "fotografpaylasmauygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kadirdundar/Desktop/fotografpaylasmauygulamasi/fotografpaylasmauygulamasi/feedCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
