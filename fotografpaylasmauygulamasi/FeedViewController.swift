@@ -70,7 +70,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! feedCellTableViewCell
         cell.emailText.text = postDizisi[indexPath.row].email
         cell.kullaniciyorum.text = postDizisi[indexPath.row].yorum
-        cell.postImage.sd_setImage(with: URL(string: self.postDizisi[indexPath.row].fotografUrl))
+        cell.postImage.sd_setImage(with: URL(string: self.postDizisi[indexPath.row].fotografUrl)) // asenkron olarak fotoğrafları indiriyoruz.
         
         
         return cell
