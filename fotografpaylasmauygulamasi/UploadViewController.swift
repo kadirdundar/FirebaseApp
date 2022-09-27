@@ -18,7 +18,7 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //Fotoğrafa tıklandığında algılama
         imageView.isUserInteractionEnabled = true
         let gestuRecognizer = UITapGestureRecognizer(target: self, action: #selector(gorselSec))
         imageView.addGestureRecognizer(gestuRecognizer)
